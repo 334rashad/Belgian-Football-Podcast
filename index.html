@@ -36,22 +36,40 @@
         </div>
         <div class="second_row">
           <div>2r 1c</div>
-          <div>
+          <div class="popup_container">
             2r 2c <br />
             Select any player for more details ->
+            <p class="popup_window" id="popup_p">
+              <span id="footballer_info">information about ..</span>
+              <button id="close_popup_btn" onclick="footballer('close')">
+                Close
+              </button>
+            </p>
             <img
+              id="players_list"
               src="pics/football.png"
               alt="football_team"
               usemap="#football_team"
             />
 
-            <map name="football_team">
+            <map id="ronaldo" name="football_team">
               <area
                 shape="circle"
                 coords="172,127,7"
                 alt="ronaldo"
-                onclick="ronaldo()"
+                onclick="footballer('ronaldo', this)"
               />
+              <area
+                shape="circle"
+                coords="278,153,7"
+                alt="ronaldo"
+                onclick="footballer('chaknorris')"
+              />
+              <area
+                shape="circle"
+                coords="385,126,7"
+                alt="ronaldo"
+                onclick="footballer('simulyator')"
               />
             </map>
           </div>
@@ -95,5 +113,6 @@
         </ul>
       </div>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
