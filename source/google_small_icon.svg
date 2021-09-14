@@ -1,0 +1,14 @@
+<svg id="Podcast_icon_final" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+  <g id="logo_podcasts_192px">
+    <rect id="Rectangle-path" width="34" height="34" fill="rgba(0,0,0,0)"/>
+    <path id="Shape" d="M3.073,11.109a1.947,1.947,0,0,0-1.948,1.948v2.125a1.948,1.948,0,0,0,3.9,0V13.057A1.947,1.947,0,0,0,3.073,11.109Z" transform="translate(0.292 2.88)" fill="#0066d9"/>
+    <path id="Shape-2" data-name="Shape" d="M24.729,11.109a1.947,1.947,0,0,0-1.948,1.948v2.125a1.948,1.948,0,0,0,3.9,0V13.057A1.947,1.947,0,0,0,24.729,11.109Z" transform="translate(5.906 2.88)" fill="#4285f4"/>
+    <path id="Shape-3" data-name="Shape" d="M8.417,16.172A1.947,1.947,0,0,0,6.469,18.12v2.125a1.948,1.948,0,0,0,3.9,0V18.12A1.947,1.947,0,0,0,8.417,16.172Z" transform="translate(1.677 4.193)" fill="#ea4335"/>
+    <path id="Shape-4" data-name="Shape" d="M8.417,6.047A1.947,1.947,0,0,0,6.469,7.995v6.951h0a1.947,1.947,0,0,0,3.892,0h0V7.995A1.947,1.947,0,0,0,8.417,6.047Z" transform="translate(1.677 1.568)" fill="#ea4335"/>
+    <path id="Shape-5" data-name="Shape" d="M19.385,6.047a1.947,1.947,0,0,0-1.948,1.948V10.12a1.948,1.948,0,0,0,3.9,0V7.995A1.947,1.947,0,0,0,19.385,6.047Z" transform="translate(4.521 1.568)" fill="#34a853"/>
+    <path id="Shape-6" data-name="Shape" d="M13.9,1.125a1.947,1.947,0,0,0-1.948,1.948V5.2a1.948,1.948,0,0,0,3.9,0V3.073A1.947,1.947,0,0,0,13.9,1.125Z" transform="translate(3.099 0.292)" fill="#fab908"/>
+    <path id="Shape-7" data-name="Shape" d="M13.9,21.094a1.947,1.947,0,0,0-1.948,1.948v2.125a1.948,1.948,0,1,0,3.9,0V23.042A1.947,1.947,0,0,0,13.9,21.094Z" transform="translate(3.099 5.469)" fill="#fab908"/>
+    <path id="Shape-8" data-name="Shape" d="M19.385,12.375a1.947,1.947,0,0,0-1.948,1.948v6.906a1.948,1.948,0,0,0,3.9,0V14.323A1.947,1.947,0,0,0,19.385,12.375Z" transform="translate(4.521 3.208)" fill="#34a853"/>
+    <path id="Shape-9" data-name="Shape" d="M15.849,9.4a1.948,1.948,0,0,0-3.9,0h0V20.734h0a1.948,1.948,0,1,0,3.9,0h0V9.4Z" transform="translate(3.099 1.932)" fill="#fab908"/>
+  </g>
+</svg>

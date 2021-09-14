@@ -39,6 +39,19 @@
           <div class="popup_container">
             2r 2c <br />
             Select any player for more details ->
+            <ul id="skyline">
+              <li id="panel1b" onclick="footballer('ronaldo')"></li>
+              <li id="panel2b" onclick="footballer('chak')"></li>
+              <li id="panel3b" onclick="footballer('simul')"></li>
+              <li id="panel4b" onclick="footballer('4')"></li>
+              <li id="panel5b" onclick="footballer('5')"></li>
+              <li id="panel6b" onclick="footballer('6')"></li>
+              <li id="panel7b" onclick="footballer('7')"></li>
+              <li id="panel8b" onclick="footballer('8')"></li>
+              <li id="panel9b" onclick="footballer('9')"></li>
+              <li id="panel10b" onclick="footballer('10')"></li>
+              <li id="panel11b" onclick="footballer('11')"></li>
+            </ul>
             <p class="popup_window" id="popup_p">
               <span id="footballer_info">information about ..</span>
               <button id="close_popup_btn" onclick="footballer('close')">
@@ -52,14 +65,18 @@
               usemap="#football_team"
             />
 
-            <map id="ronaldo" name="football_team">
+            <!-- <map id="ronaldo" name="football_team">
               <area
+                onblur="this.focus()"
+                autofocus
                 shape="circle"
                 coords="172,127,7"
                 alt="ronaldo"
-                onclick="footballer('ronaldo', this)"
+                onclick="footballer('ronaldo')"
               />
               <area
+                onblur="this.focus()"
+                autofocus
                 shape="circle"
                 coords="278,153,7"
                 alt="ronaldo"
@@ -71,7 +88,7 @@
                 alt="ronaldo"
                 onclick="footballer('simulyator')"
               />
-            </map>
+            </map> -->
           </div>
         </div>
         <div class="third_row">
