@@ -173,9 +173,10 @@ footer div ul li {
   border: 1px #fae0433d solid;
 }
 #embed_video {
-  padding: 1rem;
   margin: 1rem;
-  border-radius: 10px;
+  border-radius: 7px;
+  overflow: hidden;
+  z-index: 1;
   width: 80%;
   height: 70%;
 }
