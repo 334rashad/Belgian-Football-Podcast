@@ -172,6 +172,13 @@ footer div ul li {
   background-color: #201a05;
   border: 1px #fae0433d solid;
 }
+#embed_video {
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  width: 80%;
+  height: 70%;
+}
 #players_list {
   display: block;
   margin: auto;
