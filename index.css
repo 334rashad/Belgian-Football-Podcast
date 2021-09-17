@@ -14,6 +14,10 @@ body {
 body::-webkit-scrollbar {
   display: none; /* Safari and Chrome */
 }
+a {
+  text-decoration: none;
+  color: white;
+}
 header {
   height: 11rem;
   width: 100%;
@@ -31,33 +35,6 @@ header {
   background-color: rgb(228, 228, 159);
   margin: 1rem 1rem 1rem 5.7rem;
   border-radius: 10px;
-}
-main {
-  height: 89.45%;
-  width: 100%;
-  background-color: black;
-}
-footer {
-  font-size: 0.75rem;
-  height: 93px;
-  width: 100%;
-  background-color: #201a05;
-  position: absolute;
-  bottom: 0;
-  border-top: 3px solid yellow;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #bcbbb4;
-  padding: 0 1rem;
-}
-.podcasts {
-  padding-left: 1rem;
-  margin: 1.5rem 14% 1.5rem 3rem;
-}
-.podcasts div {
-  margin: 5px;
-  min-width: 7rem;
 }
 nav {
   width: 93%;
@@ -83,9 +60,13 @@ nav li:nth-child(1) {
   padding-bottom: 17px;
   margin-bottom: -17px;
 }
-a {
-  text-decoration: none;
-  color: white;
+.podcasts {
+  padding-left: 1rem;
+  margin: 1.5rem 14% 1.5rem 3rem;
+}
+.podcasts div {
+  margin: 5px;
+  min-width: 7rem;
 }
 .podcasts div {
   height: 2rem;
@@ -96,26 +77,10 @@ a {
   text-align: center;
   color: #797979;
 }
-.icon {
-  width: 3rem;
-  padding: 0 12px;
-}
-#icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.copyright {
-  display: flex;
-  width: 30%;
-  justify-content: space-between;
-  margin-left: 5rem;
-}
-.info {
-  padding-top: 7px;
-}
-footer div ul li {
-  padding-left: 3.5rem;
+main {
+  height: 89.45%;
+  width: 100%;
+  background-color: black;
 }
 .main_container {
   height: 100%;
@@ -172,13 +137,23 @@ footer div ul li {
   background-color: #201a05;
   border: 1px #fae0433d solid;
 }
+.first_row > div {
+  padding: 2rem;
+  position: relative;
+}
 #embed_video {
-  margin: 1rem;
   border-radius: 7px;
   overflow: hidden;
   z-index: 1;
   width: 80%;
   height: 70%;
+}
+#embed_audio {
+  display: block;
+  position: absolute;
+  width: 90%;
+  bottom: 5%;
+  margin: auto;
 }
 #players_list {
   display: block;
@@ -214,7 +189,6 @@ footer div ul li {
   transition: all 0.2s ease;
   -webkit-transition: all 0.2s ease;
 }
-
 #panel1b {
   margin-top: 18%;
   left: 29.75%;
@@ -259,7 +233,6 @@ footer div ul li {
   margin-top: 59%;
   left: 87%;
 }
-
 area {
   cursor: pointer;
 }
@@ -267,7 +240,6 @@ area {
   position: relative;
   display: inline-block;
 }
-
 /* The actual popup */
 .popup_container .popup_window {
   visibility: hidden;
@@ -282,6 +254,9 @@ area {
   z-index: 3;
   left: 7.5%;
   top: 4.5%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 /* Toggle this class - hide and show the popup */
 .popup_container .show {
@@ -309,12 +284,6 @@ area {
   }
 }
 
-#popup_p {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-}
-
 #close_popup_btn {
   align-self: center;
   position: absolute;
@@ -336,4 +305,39 @@ area {
   background-color: #999;
   box-shadow: 0 5px 3px -2px #666;
   transform: translateY(3px);
+}
+footer {
+  font-size: 0.75rem;
+  height: 93px;
+  width: 100%;
+  background-color: #201a05;
+  position: absolute;
+  bottom: 0;
+  border-top: 3px solid yellow;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #bcbbb4;
+  padding: 0 1rem;
+}
+.copyright {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  margin-left: 5rem;
+}
+.icon {
+  width: 3rem;
+  padding: 0 12px;
+}
+#icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.info {
+  padding-top: 7px;
+}
+footer div ul li {
+  padding-left: 3.5rem;
 }
