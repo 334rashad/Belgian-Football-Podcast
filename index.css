@@ -19,7 +19,7 @@ a {
   color: white;
 }
 header {
-  height: 11rem;
+  height: 12rem;
   width: 100%;
   background-color: black;
   display: grid;
@@ -29,12 +29,25 @@ header {
   border-bottom: 3px solid yellow;
   font-size: 0.9rem;
 }
-#logo {
-  height: 9rem;
-  width: 9rem;
-  background-color: rgb(228, 228, 159);
+#logo_div {
+  position: relative;
+  height: 10rem;
+  width: 10rem;
   margin: 1rem 1rem 1rem 5.7rem;
-  border-radius: 10px;
+  border-radius: 20%;
+}
+#logo_div > div {
+  position: absolute;
+  width: 33%;
+  height: 33%;
+  border-radius: 50%;
+  top: 24.5%;
+  left: 31%;
+  box-shadow: rgba(250, 224, 67, 0.5) 0 0 45px 30px;
+}
+#logo_png {
+  width: 100%;
+  height: 100%;
 }
 nav {
   width: 93%;
@@ -78,7 +91,7 @@ nav li:nth-child(1) {
   color: #797979;
 }
 main {
-  height: 89.45%;
+  height: 157rem;
   width: 100%;
   background-color: black;
 }
@@ -202,19 +215,19 @@ main {
   left: 65.7%;
 }
 #panel4b {
-  margin-top: 40%;
-  left: 22%;
+  margin-top: 39%;
+  left: 24%;
 }
 #panel5b {
-  margin-top: 43%;
+  margin-top: 44%;
   left: 47.7%;
 }
 #panel6b {
-  margin-top: 40%;
+  margin-top: 39%;
   left: 72%;
 }
 #panel7b {
-  margin-top: 60%;
+  margin-top: 59%;
   left: 9%;
 }
 #panel8b {
@@ -308,7 +321,7 @@ area {
 }
 footer {
   font-size: 0.75rem;
-  height: 93px;
+  height: 6rem;
   width: 100%;
   background-color: #201a05;
   position: absolute;
