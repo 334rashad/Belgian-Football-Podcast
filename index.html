@@ -30,9 +30,24 @@
         </ul>
       </nav>
       <ul class="podcasts">
-        <div>google podcasts</div>
-        <div>spotify</div>
-        <div>apple podcasts</div>
+        <div>
+          <img
+            src="source/google_podcast_rect_small_icon.svg"
+            alt="google podcast icon"
+          />
+        </div>
+        <div>
+          <img
+            src="source/spotify_podcast_rect_small_icon.svg"
+            alt="spotify podcast icon"
+          />
+        </div>
+        <div>
+          <img
+            src="source/apple_podcast_rect_small_icon.svg"
+            alt="apple podcast icon"
+          />
+        </div>
       </ul>
     </header>
 
@@ -54,8 +69,28 @@
             </p>
             <h2>Waasland-Bevern Special With CEO Antonie Gobin!</h2>
           </div>
-          <div>
-            1r 2c
+          <div id="">
+            <div>
+              <h2>WHO WE ARE</h2>
+              <p>A little audio intro dummy text very short</p>
+            </div>
+            <div>
+              <p>
+                <img
+                  src="source/google_small_icon.svg"
+                  alt="google_small_icon"
+                />
+              </p>
+              <p>
+                <img
+                  src="source/spotufy_small_icon.svg"
+                  alt="spotufy_small_icon"
+                />
+              </p>
+              <p>
+                <img src="source/apple_small_icon.svg" alt="apple_small_icon" />
+              </p>
+            </div>
             <p id="embed_audio">
               <iframe
                 src="https://open.spotify.com/embed/track/2ygMBIctKIAfbEBcT9065L?theme=0"
@@ -67,39 +102,54 @@
               ></iframe>
             </p>
           </div>
-          <div>1r 2c</div>
+          <div id="twitter_feed">
+            <a
+              class="twitter-timeline"
+              data-height="422"
+              href="https://twitter.com/BelgianPodcast?ref_src=twsrc%5Etfw"
+              >Tweets by BelgianPodcast</a
+            >
+            <script
+              async
+              src="https://platform.twitter.com/widgets.js"
+              charset="utf-8"
+            ></script>
+          </div>
         </div>
         <div class="second_row">
           <div>2r 1c</div>
           <div class="popup_container">
-            2r 2c <br />
-            Select any player for more details ->
-            <ul id="skyline">
-              <li id="panel1b" onclick="footballer('ronaldo')"></li>
-              <li id="panel2b" onclick="footballer('chak')"></li>
-              <li id="panel3b" onclick="footballer('simul')"></li>
-              <li id="panel4b" onclick="footballer('4')"></li>
-              <li id="panel5b" onclick="footballer('5')"></li>
-              <li id="panel6b" onclick="footballer('6')"></li>
-              <li id="panel7b" onclick="footballer('7')"></li>
-              <li id="panel8b" onclick="footballer('8')"></li>
-              <li id="panel9b" onclick="footballer('9')"></li>
-              <li id="panel10b" onclick="footballer('10')"></li>
-              <li id="panel11b" onclick="footballer('11')"></li>
-            </ul>
-            <p class="popup_window" id="popup_p">
-              <span id="footballer_info">information about ..</span>
-              <button id="close_popup_btn" onclick="footballer('close')">
-                Close
-              </button>
-            </p>
-            <img
-              id="players_list"
-              src="pics/football.png"
-              alt="football_team"
-              usemap="#football_team"
-            />
-
+            <span id="pic_text">
+              Click on the player to see the details
+              <span id="pointing_hand">&#9758;</span>
+            </span>
+            <div id="team_pic_container">
+              <ul id="skyline">
+                <li id="panel1b" onclick="footballer('1')"></li>
+                <li id="panel2b" onclick="footballer('2')"></li>
+                <li id="panel3b" onclick="footballer('3')"></li>
+                <li id="panel4b" onclick="footballer('4')"></li>
+                <li id="panel5b" onclick="footballer('5')"></li>
+                <li id="panel6b" onclick="footballer('6')"></li>
+                <li id="panel7b" onclick="footballer('7')"></li>
+                <li id="panel8b" onclick="footballer('8')"></li>
+                <li id="panel9b" onclick="footballer('9')"></li>
+                <li id="panel10b" onclick="footballer('10')"></li>
+                <li id="panel11b" onclick="footballer('11')"></li>
+              </ul>
+              <p class="popup_window" id="popup_p">
+                <span id="footballer_info"> </span>
+                <button id="close_popup_btn" onclick="footballer('close')">
+                  Close
+                </button>
+              </p>
+              <img
+                id="players_list"
+                src="source/Team_of_the_week_img.png"
+                alt="football_team"
+                usemap="#football_team"
+              />
+            </div>
             <!-- <map id="ronaldo" name="football_team">
               <area
                 onblur="this.focus()"

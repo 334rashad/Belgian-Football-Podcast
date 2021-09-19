@@ -58,14 +58,14 @@ nav ul,
 .podcasts {
   display: flex;
   list-style-type: none;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0px;
 }
 nav li {
   padding: 0 0.1rem;
 }
 nav li:hover {
-  border-bottom: 6px solid #a1a0963d;
+  border-bottom: 6px solid #fae043;
   margin-bottom: -15px;
 }
 nav li:nth-child(1) {
@@ -75,20 +75,17 @@ nav li:nth-child(1) {
 }
 .podcasts {
   padding-left: 1rem;
-  margin: 1.5rem 14% 1.5rem 3rem;
+  margin: 2rem 6rem 2rem 7%;
 }
 .podcasts div {
-  margin: 5px;
-  min-width: 7rem;
+  min-width: 8rem;
 }
-.podcasts div {
-  height: 2rem;
-  width: 85%;
-  background-color: #2e2e2e;
-  padding: 1px 0px;
+.podcasts div img {
+  display: inline-block;
+  width: 95%;
   border-radius: 10px;
-  text-align: center;
-  color: #797979;
+  margin: 5px;
+  height: 2.5rem;
 }
 main {
   height: 157rem;
@@ -113,38 +110,60 @@ main {
   grid-template-rows: repeat(10, 1fr);
   gap: 2rem;
 }
-.main_container div div {
+.main_container > div > div {
   margin: 1rem;
+  padding-top: 15px;
 }
-.first_row div:first-child {
+.first_row > div:first-child {
   grid-area: 1 /1 / span 9 / span 6;
   background-color: #201a05;
   border-radius: 10px;
   border: 1px #fae0433d solid;
 }
-.first_row div:nth-child(2) {
+.first_row > div:nth-child(2) {
   grid-area: 1 /7 /5 /11;
   background-color: #201a05;
   border-radius: 10px;
   border: 1px #fae0433d solid;
+  display: flex;
+  justify-content: space-between;
 }
-.first_row div:nth-child(3) {
+.first_row > div:nth-child(2) > div {
+  margin: 0;
+  border: none;
+  height: 7rem;
+}
+.first_row > div:nth-child(2) div:first-child {
+  flex: 2 80%;
+}
+.first_row > div:nth-child(2) div:nth-child(2) {
+  flex: 1 20%;
+}
+.first_row > div:nth-child(2) div:nth-child(2) {
+  flex: 1 20%;
+  display: flex;
+  justify-content: space-between;
+}
+.first_row > div:nth-child(2) div:nth-child(2) > p {
+  padding-left: 15px;
+}
+.first_row > div:nth-child(3) {
   grid-area: 5 /7 /11 /11;
   background-color: white;
   border-radius: 10px;
 }
-.second_row div:nth-child(1) {
+.second_row > div:nth-child(1) {
   grid-area: 1/1/11/5;
   background-color: white;
   border-radius: 10px;
 }
-.second_row div:nth-child(2) {
+.second_row > div:nth-child(2) {
   grid-area: 1/5/10/11;
   background-color: #201a05;
   border-radius: 10px;
   border: 1px #fae0433d solid;
 }
-.third_row div:nth-child(1) {
+.third_row > div:nth-child(1) {
   grid-area: 1/1/9/11;
   border-radius: 10px;
   background-color: #201a05;
@@ -168,10 +187,15 @@ main {
   bottom: 5%;
   margin: auto;
 }
+
+#twitter_feed {
+  padding: 10px;
+}
 #players_list {
   display: block;
   margin: auto;
-  width: 95%;
+  width: 90%;
+  border-radius: 10px;
 }
 #skyline {
   margin: 0;
@@ -189,12 +213,12 @@ main {
   top: 0;
   display: block;
   border: 3px solid white;
-  box-shadow: none;
   transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
 }
 #skyline li:hover {
   box-shadow: red 0 0 0 3px;
+  box-shadow: red 0 0 15px 5px;
 }
 #skyline li:active {
   background: white;
@@ -203,70 +227,73 @@ main {
   -webkit-transition: all 0.2s ease;
 }
 #panel1b {
-  margin-top: 18%;
-  left: 29.75%;
+  margin-top: 23%;
+  left: 38%;
 }
 #panel2b {
-  margin-top: 22.7%;
-  left: 47.6%;
+  margin-top: 23%;
+  left: 58.4%;
 }
 #panel3b {
-  margin-top: 18%;
-  left: 65.7%;
+  margin-top: 39.5%;
+  left: 18%;
 }
 #panel4b {
-  margin-top: 39%;
-  left: 24%;
+  margin-top: 42.6%;
+  left: 34.7%;
 }
 #panel5b {
-  margin-top: 44%;
-  left: 47.7%;
+  margin-top: 42.6%;
+  left: 63%;
 }
 #panel6b {
-  margin-top: 39%;
-  left: 72%;
+  margin-top: 39.5%;
+  left: 78.5%;
 }
 #panel7b {
-  margin-top: 59%;
-  left: 9%;
+  margin-top: 59.5%;
+  left: 14.5%;
 }
 #panel8b {
-  margin-top: 60%;
-  left: 30%;
+  margin-top: 63%;
+  left: 35%;
 }
 #panel9b {
-  margin-top: 65%;
-  left: 47.7%;
+  margin-top: 63%;
+  left: 61.5%;
 }
 #panel10b {
-  margin-top: 60%;
-  left: 65.7%;
+  margin-top: 59.5%;
+  left: 82%;
 }
 #panel11b {
-  margin-top: 59%;
-  left: 87%;
+  margin-top: 76.5%;
+  left: 48.2%;
 }
 area {
   cursor: pointer;
 }
 .popup_container {
   position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
 }
 /* The actual popup */
 .popup_container .popup_window {
   visibility: hidden;
-  width: 85%;
-  height: 70%;
-  background-color: rgba(85, 0, 0, 0.9);
-  color: rgb(93, 92, 91);
+  width: 70%;
+  height: 96%;
+  background-color: rgba(124, 82, 3, 0.95);
+  color: rgb(201, 201, 201);
   text-align: center;
   border-radius: 10px;
   padding: 8px 0;
   position: absolute;
   z-index: 3;
-  left: 7.5%;
-  top: 4.5%;
+  left: 25.5%;
+  top: 0px;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -277,7 +304,21 @@ area {
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
 }
-
+#pic_text {
+  color: #efefed;
+  flex: 1 20%;
+  font-size: 1.5rem;
+  text-align: center;
+}
+#pointing_hand {
+  font-size: 40px;
+  line-height: 65%;
+}
+#team_pic_container {
+  flex: 2 80%;
+  width: 70%;
+  border: none;
+}
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
   from {
