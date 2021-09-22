@@ -269,6 +269,9 @@ main {
 } /* end of third sub container elements*/
 
 /* fourth sub container elements*/
+#league_table > a {
+  color: #060501;
+}
 /* end of sub container elements*/
 
 /* fifth sub container elements*/
