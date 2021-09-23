@@ -272,7 +272,7 @@ main {
 #league_table {
   width: 100%;
   margin: 10px;
-  font: normal normal 600 32px/40px "Source Sans Pro";
+  font: normal normal normal 18px/24px "Open Sans";
 }
 #league_table > a {
   color: #060501;
