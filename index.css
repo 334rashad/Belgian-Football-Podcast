@@ -271,8 +271,9 @@ main {
 /* fourth sub container elements*/
 #league_table {
   width: 100%;
-  margin: 10px;
+  padding: 10px;
   font: normal normal normal 18px/24px "Open Sans";
+  color: #060501;
 }
 #league_table > a {
   color: #060501;
