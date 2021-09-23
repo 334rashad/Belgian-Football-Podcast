@@ -272,6 +272,7 @@ main {
 #league_table {
   width: 90%;
   margin: auto;
+  font-size: 18px;
 }
 #league_table > a {
   color: #060501;
