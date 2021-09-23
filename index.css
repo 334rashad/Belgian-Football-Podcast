@@ -269,6 +269,10 @@ main {
 } /* end of third sub container elements*/
 
 /* fourth sub container elements*/
+#league_table {
+  width: 90%;
+  margin: auto;
+}
 #league_table > a {
   color: #060501;
 }
@@ -290,6 +294,7 @@ main {
   position: absolute;
   top: 0;
   display: block;
+  cursor: pointer;
   border: 3px solid white;
   transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
