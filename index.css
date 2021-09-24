@@ -113,7 +113,7 @@ main {
   margin-left: 5.5rem;
   margin-right: 1rem;
   display: grid;
-  grid-template-rows: auto auto 40rem;
+  grid-template-rows: auto 45rem 40rem;
   row-gap: 14px;
   padding: 1.5rem 0rem;
 }
@@ -168,7 +168,7 @@ main {
   border-radius: 8px;
 }
 .second_row > div:nth-child(1) {
-  grid-area: 1/1/21/5;
+  grid-area: 1/1/20/5;
   background-color: white;
   border-radius: 8px;
 }
@@ -270,14 +270,25 @@ main {
 
 /* fourth sub container elements*/
 #league_table {
-  background-color: #201a05;
-  width: 100%;
-  padding: 20px;
-  font: normal normal normal 18px/24px "Open Sans";
-  color: #060501;
+  padding: 0;
+  height: 98%;
 }
-#league_table > a {
-  color: #060501;
+#league_table > p {
+  /* background-color: #201a05; */
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  font: normal normal normal 16px/28px "Open Sans";
+  color: rgb(71, 71, 71);
+  overflow: auto;
+}
+#league_table tr:first-child a {
+  font: normal normal bold 24px/28px "Open Sans";
+  color: rgb(20, 31, 94);
+}
+#league_table a {
+  font: normal normal 600 18px/24px "Open Sans";
+  color: rgb(16, 49, 110);
 }
 /* end of sub container elements*/
 
