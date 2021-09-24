@@ -113,7 +113,7 @@ main {
   margin-left: 5.5rem;
   margin-right: 1rem;
   display: grid;
-  grid-template-rows: auto 45rem 40rem;
+  grid-template-rows: auto 45rem 40rem 50px;
   row-gap: 14px;
   padding: 1.5rem 0rem;
 }
