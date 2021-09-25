@@ -377,8 +377,8 @@ main {
 /* The actual popup */
 .popup_container .popup_window {
   visibility: hidden;
-  width: 71%;
-  height: 87%;
+  width: 63%;
+  height: 91%;
   background-color: rgba(124, 82, 3, 0.95);
   color: rgb(201, 201, 201);
   text-align: center;
@@ -386,8 +386,8 @@ main {
   padding: 8px 0;
   position: absolute;
   z-index: 3;
-  left: 26.2%;
-  top: 37px;
+  right: 2%;
+  top: 1rem;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -398,7 +398,8 @@ main {
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
 }
-#pic_text {
+#pic_text,
+#pointing_hand {
   text-align: left;
   font: normal normal normal 18px/28px Open Sans;
   letter-spacing: 0px;
@@ -406,12 +407,16 @@ main {
   flex: 1 20%;
 }
 #pointing_hand {
+  text-align: center;
+  flex: 1 10%;
+}
+#pointing_hand {
+  display: inline-block;
   font-size: 50px;
   line-height: 50%;
 }
 #team_pic_container {
-  flex: 2 80%;
-  width: 90%;
+  flex: 2 70%;
   max-width: 659px;
   border: none;
   margin-left: 1rem;

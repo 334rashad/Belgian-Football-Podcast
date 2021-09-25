@@ -1,71 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="blog.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="blog.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="favicon.ico?v=1" type="image/x-icon" />
     <title>BELGIAN FOOTBALL PODCAST</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div id="logo">BELGIAN FOOTBALL PODCAST logo</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="blog.html">BLOG</a></li>
-                <li><a href="contacts.html">CONTACTS</a></li>
-                <li><a href="stadiums.html">STADIUMS</a></li>
-                <li><a href="about.html">ABOUT PROJECT</a></li>
-            </ul>
-        </nav>
-        <ul class="podcasts">
-            <div>google podcasts</div>
-            <div>spotify</div>
-            <div>apple podcasts</div>
+      <div id="logo_div">
+        <!-- BELGIAN FOOTBALL PODCAST logo -->
+        <div></div>
+        <img
+          id="logo_png"
+          src="source/Logo_transp.png"
+          alt="belgian football podcast logo"
+        />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="contacts.html">CONTACTS</a></li>
+          <li><a href="stadiums.html">STADIUMS</a></li>
+          <li><a href="about.html">ABOUT PROJECT</a></li>
         </ul>
+      </nav>
+      <ul class="podcasts">
+        <div>
+          <a
+            href="https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy8yZDQyZDRlOC9wb2RjYXN0L3Jzcw=="
+            target="_blank"
+          >
+            <img
+              src="source/google_podcast_rect_small_icon.svg"
+              alt="google podcast icon"
+          /></a>
+        </div>
+        <div>
+          <a
+            href="https://open.spotify.com/show/4dpTguuiKjsGExfGdO28z8"
+            target="_blank"
+          >
+            <img
+              src="source/spotify_podcast_rect_small_icon.svg"
+              alt="spotify podcast icon"
+          /></a>
+        </div>
+        <div>
+          <a
+            href="https://podcasts.apple.com/gb/podcast/the-belgian-football-podcast/id1525426226"
+            target="_blank"
+          >
+            <img
+              src="source/apple_podcast_rect_small_icon.svg"
+              alt="apple podcast icon"
+          /></a>
+        </div>
+      </ul>
     </header>
 
     <main>
-        <div class="main_container">
-            <div class="first_row">
-                <div>1r 1c</div>
-                <div>1r 2c</div>
-                <div>1r 2c</div>
-            </div>
-            <div class="second_row">
-                <div>2r 1c</div>
-                <div>2r 2c</div>
-            </div>
-            <div class="third_row">
-                <div>3r 1c</div>
-            </div>
+      <div class="main_container">
+        <div id="popup_article"><h1>BLOG</h1></div>
+        <div id="articles_container">
+          <div class="article"></div>
+          <div class="article"></div>
+          <div class="article"></div>
+          <div class="article"></div>
         </div>
+      </div>
     </main>
 
     <footer>
-        <div class="copyright">
-            <div class="info">&#169; BELGIAN FOOTBALL PODCAST </div>
-            <div id="icons">
-                <div><img class="icon" src="pics/fb-round-icon.png" alt="facebook logo"></div>
-                <div><img class="icon" src="pics/instagram-icon.png" alt="instagram logo"></div>
-                <div><img class="icon" src="pics/twitter-icon.png" alt="twitter logo"></div>
-            </div>
+      <div class="copyright">
+        <div class="info">&#169; BELGIAN FOOTBALL PODCAST</div>
+        <div id="icons">
+          <div>
+            <a
+              href="https://www.facebook.com/The-Belgian-Football-Podcast-104531051554008/"
+              target="_blank"
+            >
+              <img
+                class="icon"
+                src="source/facebook_icon_footer.svg"
+                alt="facebook logo"
+            /></a>
+          </div>
+          <div>
+            <a
+              href="https://www.instagram.com/belgianfootballpodcast/?hl=en"
+              target="_blank"
+            >
+              <img
+                class="icon"
+                src="source/insta_icon_footer.svg"
+                alt="instagram logo"
+            /></a>
+          </div>
+          <div>
+            <a
+              href="https://twitter.com/BelgianPodcast/status/1438422907563220995"
+              target="_blank"
+            >
+              <img
+                class="icon"
+                src="source/twitter_icon_footer.svg"
+                alt="twitter logo"
+            /></a>
+          </div>
         </div>
-        <div>
-            <ul class="podcasts">
-                <li>HOME</li>
-                <li>BLOG</li>
-                <li>CONTACTS</li>
-                <li>STADIUMS</li>
-                <li>ABOUT PROJECT</li>
-            </ul>
-        </div>
-
+      </div>
+      <div>
+        <ul class="footer_links">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="contacts.html">CONTACTS</a></li>
+          <li><a href="stadiums.html">STADIUMS</a></li>
+          <li><a href="about.html">ABOUT PROJECT</a></li>
+        </ul>
+      </div>
     </footer>
-
-</body>
-
+  </body>
 </html>
