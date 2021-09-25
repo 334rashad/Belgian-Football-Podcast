@@ -40,31 +40,34 @@
         </ul>
       </nav>
       <ul class="podcasts">
-        <div><a
-          href="https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy8yZDQyZDRlOC9wb2RjYXN0L3Jzcw=="
-          target="_blank"
-        >
-          <img
-            src="source/google_podcast_rect_small_icon.svg"
-            alt="google podcast icon"
+        <div>
+          <a
+            href="https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy8yZDQyZDRlOC9wb2RjYXN0L3Jzcw=="
+            target="_blank"
+          >
+            <img
+              src="source/google_podcast_rect_small_icon.svg"
+              alt="google podcast icon"
           /></a>
         </div>
-        <div><a
-          href="https://open.spotify.com/show/4dpTguuiKjsGExfGdO28z8"
-          target="_blank"
-        >
-          <img
-            src="source/spotify_podcast_rect_small_icon.svg"
-            alt="spotify podcast icon"
+        <div>
+          <a
+            href="https://open.spotify.com/show/4dpTguuiKjsGExfGdO28z8"
+            target="_blank"
+          >
+            <img
+              src="source/spotify_podcast_rect_small_icon.svg"
+              alt="spotify podcast icon"
           /></a>
         </div>
-        <div><a
-          href="https://podcasts.apple.com/gb/podcast/the-belgian-football-podcast/id1525426226"
-          target="_blank"
-        >
-          <img
-            src="source/apple_podcast_rect_small_icon.svg"
-            alt="apple podcast icon"
+        <div>
+          <a
+            href="https://podcasts.apple.com/gb/podcast/the-belgian-football-podcast/id1525426226"
+            target="_blank"
+          >
+            <img
+              src="source/apple_podcast_rect_small_icon.svg"
+              alt="apple podcast icon"
           /></a>
         </div>
       </ul>
@@ -126,12 +129,17 @@
                     alt="spotufy_small_icon"
                 /></a>
               </p>
-              <p> <a
-                href="https://podcasts.apple.com/gb/podcast/the-belgian-football-podcast/id1525426226"
-                target="_blank"
-              >
-                <img src="source/apple_small_icon.svg" alt="apple_small_icon" />
-              </p></a>
+              <p>
+                <a
+                  href="https://podcasts.apple.com/gb/podcast/the-belgian-football-podcast/id1525426226"
+                  target="_blank"
+                >
+                  <img
+                    src="source/apple_small_icon.svg"
+                    alt="apple_small_icon"
+                  />
+                </a>
+              </p>
             </div>
             <p id="embed_audio">
               <iframe
@@ -145,14 +153,33 @@
             </p>
           </div>
           <div id="twitter_feed">
-            <a class="twitter-timeline" data-height="500" href="https://twitter.com/BelgianPodcast?ref_src=twsrc%5Etfw">Tweets by BelgianPodcast</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <a
+              class="twitter-timeline"
+              data-height="450"
+              href="https://twitter.com/BelgianPodcast?ref_src=twsrc%5Etfw"
+            >
+              Tweets by BelgianPodcast
+            </a>
+            <script
+              async
+              src="https://platform.twitter.com/widgets.js"
+              charset="utf-8"
+            ></script>
           </div>
         </div>
         <div class="second_row">
           <div id="league_table">
             <p>
-            <script src="https://footballnation.eu/ranking.min.js" async></script>
-            <a href="https://footballnation.eu/" data-league="jupiler-pro-league" data-lang="en">Football scores</a>
+              <script
+                src="https://footballnation.eu/ranking.min.js"
+                async
+              ></script>
+              <a
+                href="https://footballnation.eu/"
+                data-league="jupiler-pro-league"
+                data-lang="en"
+                >Football scores</a
+              >
             </p>
           </div>
           <div class="popup_container">
@@ -161,25 +188,27 @@
               <span id="pointing_hand">&#9758;</span>
             </span>
             <div id="team_pic_container">
-              <ul id="skyline">
-                <li id="panel1b" onclick="footballer('1')"></li>
-                <li id="panel2b" onclick="footballer('2')"></li>
-                <li id="panel3b" onclick="footballer('3')"></li>
-                <li id="panel4b" onclick="footballer('4')"></li>
-                <li id="panel5b" onclick="footballer('5')"></li>
-                <li id="panel6b" onclick="footballer('6')"></li>
-                <li id="panel7b" onclick="footballer('7')"></li>
-                <li id="panel8b" onclick="footballer('8')"></li>
-                <li id="panel9b" onclick="footballer('9')"></li>
-                <li id="panel10b" onclick="footballer('10')"></li>
-                <li id="panel11b" onclick="footballer('11')"></li>
-              </ul>
-              <p class="popup_window" id="popup_p">
-                <span id="footballer_info"> </span>
-                <button id="close_popup_btn" onclick="footballer('close')">
-                  Close
-                </button>
-              </p>
+              <div>
+                <ul id="skyline">
+                  <li id="panel1b" onclick="footballer('1')"></li>
+                  <li id="panel2b" onclick="footballer('2')"></li>
+                  <li id="panel3b" onclick="footballer('3')"></li>
+                  <li id="panel4b" onclick="footballer('4')"></li>
+                  <li id="panel5b" onclick="footballer('5')"></li>
+                  <li id="panel6b" onclick="footballer('6')"></li>
+                  <li id="panel7b" onclick="footballer('7')"></li>
+                  <li id="panel8b" onclick="footballer('8')"></li>
+                  <li id="panel9b" onclick="footballer('9')"></li>
+                  <li id="panel10b" onclick="footballer('10')"></li>
+                  <li id="panel11b" onclick="footballer('11')"></li>
+                </ul>
+                <p class="popup_window" id="popup_p">
+                  <span id="footballer_info"> </span>
+                  <button id="close_popup_btn" onclick="footballer('close')">
+                    Close
+                  </button>
+                </p>
+              </div>
               <img
                 id="players_list"
                 src="source/Team_of_the_week_img.png"
@@ -224,26 +253,42 @@
         <div class="info">&#169; BELGIAN FOOTBALL PODCAST</div>
         <div id="icons">
           <div>
-            <img
-              class="icon"
-              src="pics/fb-round-icon.png"
-              alt="facebook logo"
-            />
+            <a
+              href="https://www.facebook.com/The-Belgian-Football-Podcast-104531051554008/"
+              target="_blank"
+            >
+              <img
+                class="icon"
+                src="source/facebook_icon_footer.svg"
+                alt="facebook logo"
+            /></a>
           </div>
           <div>
-            <img
-              class="icon"
-              src="pics/instagram-icon.png"
-              alt="instagram logo"
-            />
+            <a
+              href="https://www.instagram.com/belgianfootballpodcast/?hl=en"
+              target="_blank"
+            >
+              <img
+                class="icon"
+                src="source/insta_icon_footer.svg"
+                alt="instagram logo"
+            /></a>
           </div>
           <div>
-            <img class="icon" src="pics/twitter-icon.png" alt="twitter logo" />
+            <a
+              href="https://twitter.com/BelgianPodcast/status/1438422907563220995"
+              target="_blank"
+            >
+              <img
+                class="icon"
+                src="source/twitter_icon_footer.svg"
+                alt="twitter logo"
+            /></a>
           </div>
         </div>
       </div>
       <div>
-        <ul class="podcasts">
+        <ul class="footer_links">
           <li>HOME</li>
           <li>BLOG</li>
           <li>CONTACTS</li>
