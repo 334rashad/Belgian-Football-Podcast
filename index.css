@@ -6,7 +6,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: #060501;
-  height: 175rem;
   width: 100vw;
   position: relative;
   overflow-x: hidden;
@@ -106,11 +105,9 @@ nav li:nth-child(1) {
   height: 2.5rem;
 }
 main {
-  height: 157rem;
   width: 100%;
 }
 .main_container {
-  height: 145rem;
   width: 90%;
   margin: auto;
   display: grid;
