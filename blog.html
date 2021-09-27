@@ -75,31 +75,81 @@
 
     <main>
       <div class="main_container">
-        <div id="popup_article"><h1>BLOG</h1></div>
+        <h1>BLOG</h1>
+        <div id="popup_article">
+          <div>
+            <div id="back_to_articles">
+              <p><span> &#8249; </span> Back to all articles</p>
+            </div>
+          </div>
+          <div class="text_container">
+            <p>BLOG <span> | </span> 15 November</p>
+            <h2>Headline of article</h2>
+            <p>
+              <span class="clock" title="Clock"></span> Reading time: 13 min
+            </p>
+          </div>
+          <div id="intro_text">
+            <p>
+              It's Champions League time once again so we've asked Joris Becq
+              from the Belgian Football Podcast to share a bit of his knowledge
+              and give us the lowdown on our first visitors to St. Petersburg,
+              Club Brugge.
+            </p>
+          </div>
+          <div id="open_article">
+            <img src="source/article pic_1.jpg" alt="blue team footballer" />
+          </div>
+        </div>
         <div id="articles_container">
-          <div class="article">
+          <div class="article" onclick="openArticle(1)">
             <img src="source/article pic_5.jpg" alt="blue team footballer" />
             <div class="text_container">
               <p>BLOG <span> | </span> 16 November</p>
               <h2>One</h2>
+              <p>
+                It's Champions League time once again so we've asked Joris Becq
+                from the Belgian Football Podcast to share...
+              </p>
             </div>
           </div>
           <div class="article">
             <img src="source/article pic_4.jpg" alt="blue team footballer" />
             <div class="text_container">
               <p>BLOG <span> | </span> 16 November</p>
+              <h2>Two</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Similique modi, eligendi tempora aliquid cum odit repellendus
+                neque. Vel dolor itaque quos modi facilis dignissimos placeat,
+                quasi, earum veniam iusto expedita.
+              </p>
             </div>
           </div>
           <div class="article">
             <img src="source/article pic_3.jpg" alt="blue team footballer" />
             <div class="text_container">
               <p>BLOG <span> | </span> 16 November</p>
+              <h2>Three</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Similique modi, eligendi tempora aliquid cum odit repellendus
+                neque. Vel dolor itaque quos modi facilis dignissimos placeat,
+                quasi, earum veniam iusto expedita.
+              </p>
             </div>
           </div>
           <div class="article">
             <img src="source/article pic_2.jpg" alt="blue team footballer" />
             <div class="text_container">
               <p>BLOG <span> | </span> 16 November</p>
+              <h2>Four</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Similique modi, eligendi tempora aliquid cum odit repellendus
+                neque. Vel dolor itaque quos modi facilis dignissimos placeat,
+                quasi, earum veniam iusto expedita.
+              </p>
             </div>
           </div>
         </div>
@@ -155,5 +205,6 @@
         </ul>
       </div>
     </footer>
+    <script src="blog.js"></script>
   </body>
 </html>

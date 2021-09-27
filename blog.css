@@ -28,9 +28,10 @@ body {
   background: #b19d30;
 }
 h1 {
+  display: none;
   margin: 4rem 0 3rem 0.75rem;
   text-align: left;
-  font: normal normal 600 54px/68px Source Sans Pro;
+  font: normal normal 600 54px/68px "Source Sans Pro";
   letter-spacing: 0px;
   color: #fae043;
   text-transform: uppercase;
@@ -110,7 +111,7 @@ nav li:nth-child(2) {
   border-radius: 8px;
   margin: 5px;
   height: 2.5rem;
-} /* footer ends here */
+} /* header ends here */
 
 /* main part starts here */
 main {
@@ -120,6 +121,133 @@ main {
   width: 90%;
   margin: auto;
   padding: 1.5rem 0rem;
+}
+#popup_article {
+  /* display: none; */
+}
+#back_to_articles {
+  margin: 1.2rem 1.2rem 4rem 1.2rem;
+  width: 243px;
+  height: 52px;
+  padding: 10px;
+  background: #343330 0% 0% no-repeat padding-box;
+  border-radius: 6px;
+}
+#back_to_articles > p {
+  margin-top: -4px;
+  text-align: center;
+  font: normal normal normal 20px/27px "Open Sans";
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+#back_to_articles > p > span {
+  font: normal normal lighter 60px/27px "Open Sans";
+  vertical-align: -37%;
+}
+#popup_article .text_container {
+  margin-left: 1rem;
+}
+#popup_article .text_container > p:nth-child(3) {
+  padding-top: 10px;
+  font: normal normal normal 14px/18px "Source Sans Pro";
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+.text_container {
+  width: 90%;
+  margin: auto;
+}
+.text_container > p:first-child {
+  text-align: left;
+  font: normal normal 300 20px/25px "Source Sans Pro";
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.text_container > p > span {
+  display: inline-block;
+  padding: 0 5px;
+}
+.text_container > h2 {
+  font: normal normal 600 32px/40px "Source Sans Pro";
+  letter-spacing: 0px;
+  color: #fae043;
+  text-transform: uppercase;
+  margin: 5px 0;
+}
+.text_container > p:nth-child(3) {
+  overflow: hidden;
+  height: 2.7rem;
+  margin: 7px 0px 7px 0px;
+  text-align: left;
+  font: normal normal normal 18px/24px "Open Sans";
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+/* clock icon */
+span.clock {
+  margin-right: 8px;
+  background-color: transparent;
+  border: 2px solid white;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  border-radius: 100%;
+  height: 18px;
+  width: 18px;
+}
+span.clock:after,
+span.clock:before {
+  background: transparent;
+  border: 2px solid white;
+  content: "";
+  position: absolute;
+  border-left: none;
+  width: 0;
+  border-radius: 0 0 10px 10px;
+}
+span.clock:after {
+  height: 3px;
+  left: 6px;
+  top: 2px;
+}
+span.clock:before {
+  height: 1px;
+  left: 7.4px;
+  top: 7px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+} /* clock icon end*/
+#intro_text {
+  margin: 1rem;
+  padding: 10px 25px;
+  width: 63%;
+  min-width: 750px;
+  height: auto;
+  background: #201a05 0% 0% no-repeat padding-box;
+  border: 1px solid #fae0433d;
+  border-radius: 8px;
+}
+#intro_text > p {
+  font: normal normal 600 18px/24px Open Sans;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+#open_article {
+  margin: 2rem 1rem;
+  border-radius: 16px;
+  height: 2923px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+}
+#open_article > img {
+  border-radius: 16px 16px 0px 0px;
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
 }
 #articles_container {
   display: flex;
@@ -135,6 +263,10 @@ main {
   background: #201a05 0% 0% no-repeat padding-box;
   border: 1px solid #544a14;
   border-radius: 8px;
+  overflow: hidden;
+}
+.article:hover {
+  cursor: pointer;
 }
 .article > img {
   border-radius: 8px 8px 0 0;
@@ -142,30 +274,6 @@ main {
   height: 21rem;
   object-fit: cover;
 }
-.text_container {
-  width: 90%;
-  margin: auto;
-}
-.text_container > p {
-  text-align: left;
-  font: normal normal 300 20px/25px Source Sans Pro;
-  letter-spacing: 0px;
-  color: #ffffff;
-  text-transform: uppercase;
-  margin-bottom: 6px;
-}
-.text_container > p > span {
-  display: inline-block;
-  padding: 0 5px;
-}
-.text_container > h2 {
-  font: normal normal 600 32px/40px Source Sans Pro;
-  letter-spacing: 0px;
-  color: #fae043;
-  text-transform: uppercase;
-  margin: 5px 0;
-}
-
 /* main part ends here */
 
 /* footer starts here */
@@ -181,7 +289,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   color: #bcbbb4;
-  padding: 0 7rem;
+  padding: 0 6rem;
   text-align: center;
   font: normal normal normal 16px/20px "Source Sans Pro";
   letter-spacing: 0px;
