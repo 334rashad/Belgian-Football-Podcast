@@ -76,7 +76,7 @@
     <main>
       <div class="main_container">
         <h1>BLOG</h1>
-        <div id="popup_article">
+        <div class="popup_article">
           <div>
             <button class="back_to_articles" onclick="closeArticle()">
               <p><span> &#8249; </span> Back to all articles</p>
@@ -188,8 +188,45 @@
                 in Europa League or in Champions League.
               </p>
             </div>
-            <div id="article_buttons"><button></button> <button></button></div>
+            <div id="article_buttons">
+              <button
+                class="back_to_articles grey_button"
+                onclick="closeArticle()"
+              >
+                <p><span> &#8249; </span> Back to all articles</p>
+              </button>
+              <button
+                class="back_to_articles yellow_button"
+                onclick="readNext()"
+              >
+                <p>Read next <span> &#8250; </span></p>
+              </button>
+            </div>
           </div>
+        </div>
+        <div class="popup_article">
+          <div>
+            <button class="back_to_articles" onclick="closeArticle()">
+              <p><span> &#8249; </span> Back to all articles</p>
+            </button>
+          </div>
+          <p style="color: aliceblue">second article</p>
+        </div>
+        <div class="popup_article">
+          <div>
+            <button class="back_to_articles" onclick="closeArticle()">
+              <p><span> &#8249; </span> Back to all articles</p>
+            </button>
+          </div>
+          <p style="color: aliceblue">third article</p>
+        </div>
+        <div class="popup_article">
+          <div>
+            <button class="back_to_articles" onclick="closeArticle()">
+              <p><span> &#8249; </span> Back to all articles</p>
+            </button>
+          </div>
+          <p style="color: aliceblue">fourth article</p>
         </div>
         <div id="articles_container">
           <div class="article" onclick="openArticle(1)">
@@ -203,7 +240,7 @@
               </p>
             </div>
           </div>
-          <div class="article">
+          <div class="article" onclick="openArticle(2)">
             <img src="source/article pic_4.jpg" alt="blue team footballer" />
             <div class="text_container">
               <p>BLOG <span> | </span> 16 November</p>
@@ -216,7 +253,7 @@
               </p>
             </div>
           </div>
-          <div class="article">
+          <div class="article" onclick="openArticle(3)">
             <img src="source/article pic_3.jpg" alt="blue team footballer" />
             <div class="text_container">
               <p>BLOG <span> | </span> 16 November</p>
@@ -229,7 +266,7 @@
               </p>
             </div>
           </div>
-          <div class="article">
+          <div class="article" onclick="openArticle(4)">
             <img src="source/article pic_2.jpg" alt="blue team footballer" />
             <div class="text_container">
               <p>BLOG <span> | </span> 16 November</p>
