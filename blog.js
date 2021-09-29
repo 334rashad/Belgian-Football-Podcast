@@ -21,3 +21,11 @@ const closeArticle = (number) => {
   popupArticles[openedArticle].style.display = "none";
   document.getElementsByTagName("h1")[0].scrollIntoView();
 };
+
+const readNext = () => {
+  header1[0].style.display = "none";
+  popupArticles[openedArticle].style.display = "none";
+  openedArticle++;
+  if (openedArticle >= popupArticles.length) openedArticle = 0;
+  popupArticles[openedArticle].style.display = "block";
+};
