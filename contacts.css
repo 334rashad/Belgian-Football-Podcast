@@ -36,11 +36,14 @@ h1 {
   color: #fae043;
   text-transform: uppercase;
 }
+a {
+  text-decoration: none;
+  color: white;
+}
 /* header starts here */
 header {
   height: 12rem;
   width: 100%;
-  padding-left: 1rem;
   background-color: #060501;
   display: grid;
   grid-template-columns: 1fr 3fr 3fr;
@@ -88,7 +91,7 @@ nav li:hover {
   border-bottom: 6px solid #fae043;
   margin-bottom: -19px;
 }
-nav li:nth-child(2) {
+nav li:nth-child(3) {
   font: normal normal bold 22px/28px "Source Sans Pro";
   border-bottom: 6px solid #fae043;
   padding-bottom: 19px;
@@ -116,8 +119,55 @@ main {
 .main_container {
   width: 90%;
   margin: auto;
-  padding: 1.5rem 0rem;
+  padding: 1.5rem 1rem;
 }
+.main_container > div {
+  width: 80%;
+  height: auto;
+  margin: 5rem 5rem 30rem 1rem;
+}
+.main_container > div {
+  font: normal normal normal 24px/33px "Open Sans";
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+#contact_email > p,
+#contact_social > p,
+#contact_social > div > p {
+  display: inline-block;
+}
+#contact_email > p a {
+  text-decoration: underline;
+  font: normal normal 600 24px/33px "Open Sans";
+  letter-spacing: 0px;
+  color: #fae043;
+  margin-left: 10px;
+}
+#contact_social {
+  width: 60%;
+  margin-top: 0rem;
+  padding-top: 0%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#contact_social a {
+  display: inline-block;
+  width: 58px;
+  height: 58px;
+}
+#contact_social > div {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 2rem;
+  position: relative;
+  top: -10px;
+}
+#contact_social > div > p {
+  margin-left: 2rem;
+}
+
 /* main part ends here */
 
 /* footer starts here */
