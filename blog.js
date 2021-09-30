@@ -3,6 +3,8 @@ const header1 = document.getElementsByTagName("h1");
 const popupArticles = document.getElementsByClassName("popup_article");
 let openedArticle = 0;
 
+// variables for storing get request from URL
+// for opening articles when clicked directly from main page
 let url_string = window.location.href;
 let url = new URL(url_string);
 let articleNumber = url.searchParams.get("number");
@@ -25,6 +27,7 @@ const closeArticle = (number) => {
   document.getElementsByTagName("h1")[0].scrollIntoView();
 };
 
+// when button for next article is clicked
 const readNext = () => {
   header1[0].style.display = "none";
   popupArticles[openedArticle].style.display = "none";
@@ -34,6 +37,7 @@ const readNext = () => {
   popupArticles[openedArticle].scrollIntoView();
 };
 
+// if article is opened from main page this will trigger
 if (articleNumber) {
   openArticle(articleNumber);
 }
