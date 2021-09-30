@@ -4,10 +4,9 @@ const footballer = (name) => {
     "footballer_info"
   ).innerHTML = `<span> information about: ${name} </span>`;
   popup.classList.toggle("show");
-  // event.stopPropagation();
 };
-// "_self"
+
 const openBlogArticle = (number) => {
-  window.open("blog.html", "blog", "status=1,toolbar=1");
-  openArticle(number);
+  mywindow = window.open(`blog.html?number=${number}`, "_self");
+  console.log(mywindow);
 };

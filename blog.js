@@ -3,6 +3,10 @@ const header1 = document.getElementsByTagName("h1");
 const popupArticles = document.getElementsByClassName("popup_article");
 let openedArticle = 0;
 
+let url_string = window.location.href;
+let url = new URL(url_string);
+let articleNumber = url.searchParams.get("number");
+
 // to hide h1 element and open clicked article
 const openArticle = (number) => {
   openedArticle = number - 1;
@@ -30,4 +34,6 @@ const readNext = () => {
   popupArticles[openedArticle].scrollIntoView();
 };
 
-document.onload;
+if (articleNumber) {
+  openArticle(articleNumber);
+}
