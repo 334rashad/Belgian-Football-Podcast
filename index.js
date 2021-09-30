@@ -6,3 +6,8 @@ const footballer = (name) => {
   popup.classList.toggle("show");
   // event.stopPropagation();
 };
+// "_self"
+const openBlogArticle = (number) => {
+  window.open("blog.html", "blog", "status=1,toolbar=1");
+  openArticle(number);
+};

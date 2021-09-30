@@ -3,7 +3,6 @@ const header1 = document.getElementsByTagName("h1");
 const popupArticles = document.getElementsByClassName("popup_article");
 let openedArticle = 0;
 
-console.log(popupArticles);
 // to hide h1 element and open clicked article
 const openArticle = (number) => {
   openedArticle = number - 1;
@@ -28,4 +27,7 @@ const readNext = () => {
   openedArticle++;
   if (openedArticle >= popupArticles.length) openedArticle = 0;
   popupArticles[openedArticle].style.display = "block";
+  popupArticles[openedArticle].scrollIntoView();
 };
+
+document.onload;
