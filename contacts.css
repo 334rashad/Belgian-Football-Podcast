@@ -126,11 +126,6 @@ main {
   height: auto;
   margin: 5rem 5rem 30rem 1rem;
 }
-.main_container > div {
-  font: normal normal normal 24px/33px "Open Sans";
-  letter-spacing: 0px;
-  color: #ffffff;
-}
 
 #contact_email > p,
 #contact_social > p,
@@ -142,15 +137,23 @@ main {
   font: normal normal 600 24px/33px "Open Sans";
   letter-spacing: 0px;
   color: #fae043;
-  margin-left: 10px;
 }
 #contact_social {
-  width: 60%;
+  width: auto;
+  max-width: 42rem;
   margin-top: 0rem;
   padding-top: 0%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+#contact_email > p,
+#contact_social > p {
+  margin-right: 2rem;
+  margin-bottom: 10px;
+  font: normal normal normal 24px/33px "Open Sans";
+  letter-spacing: 0px;
+  color: #ffffff;
 }
 #contact_social a {
   display: inline-block;
@@ -164,8 +167,9 @@ main {
   position: relative;
   top: -10px;
 }
+
 #contact_social > div > p {
-  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 /* main part ends here */
