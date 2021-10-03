@@ -131,24 +131,26 @@ main {
   width: 90%;
   display: flex;
   justify-content: space-between;
-  height: auto;
+  gap: 3rem;
   margin-bottom: 20rem;
+  flex-wrap: wrap;
 }
 #stadium_info {
-  width: 653px;
-  height: 552px;
+  max-width: 653px;
   margin: 1rem;
   padding: 2rem 3rem;
   background: #201a05 0% 0% no-repeat padding-box;
   border: 1px solid #fae0433d;
   border-radius: 8px;
+  flex: 10 50%;
 }
-.stadium_text * {
-  display: inline-block;
+.stadium_text > * {
+  display: inline;
   color: #efefed;
   font: normal normal normal 20px/28px "Open Sans";
   letter-spacing: 0px;
   padding-right: 14px;
+  margin-top: 10px;
 }
 .stadium_text > p {
   margin: 3px 0px;
@@ -160,9 +162,17 @@ main {
   margin-top: 2.5rem;
 }
 #stadiums_map {
-  width: 653px;
+  width: 100%;
+  max-width: 500px;
   height: 552px;
-  margin: 1rem;
+  position: relative;
+  top: 5rem;
+  flex: 9 40%;
+}
+#stadiums_map > object {
+  margin: auto;
+  width: 120%;
+  min-width: 350px;
 }
 /* main part ends here */
 
