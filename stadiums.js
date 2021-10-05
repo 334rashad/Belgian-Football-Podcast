@@ -7,21 +7,20 @@ a.addEventListener(
   function () {
     // get the inner DOM of alpha.svg
     const svgDoc = a.contentDocument;
-    // get the inner element by id
-    let antwerp = svgDoc.getElementById("antwerp");
+    //not to color text inside SVG map we need this parent
+    const svgText = svgDoc.getElementById("belgium");
     // add behaviour
-    antwerp.addEventListener(
+    svgDoc.addEventListener(
       "mouseover",
-      function (e) {
-        svgDoc.getElementById("east_flanders").style.fill = "red";
+      function (evt) {
+        if (svgText.contains(evt.target)) evt.target.style.fill = "#FFF6C0";
       },
       false
     );
-    antwerp.addEventListener(
+    svgDoc.addEventListener(
       "mouseout",
-      function (e) {
-        e.fill = "#333";
-        svgDoc.getElementById("east_flanders").style.fill = "green";
+      function (evt) {
+        if (svgText.contains(evt.target)) evt.target.style.fill = "#FAD443";
       },
       false
     );
