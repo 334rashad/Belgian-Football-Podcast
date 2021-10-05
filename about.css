@@ -269,3 +269,10 @@ footer {
   padding-left: 1rem;
 }
 /* footer ends here */
+
+/* media queries  */
+@media screen and (max-width: 480px) {
+  .text {
+    font-size: 16px;
+  }
+}

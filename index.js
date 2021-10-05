@@ -8,5 +8,4 @@ const footballer = (name) => {
 
 const openBlogArticle = (number) => {
   mywindow = window.open(`blog.html?number=${number}`, "_self");
-  console.log(mywindow);
 };
