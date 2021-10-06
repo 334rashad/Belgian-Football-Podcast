@@ -141,7 +141,9 @@ a.addEventListener(
       "click",
       function (evt) {
         if (dots.contains(evt.target)) {
-          alert(evt.target + " dot clicked");
+          alert(
+            "dot clicked with id: " + evt.target.parentElement.parentElement.id
+          );
           console.log(evt.target.parentElement.parentElement.id);
         }
       },

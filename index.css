@@ -114,7 +114,9 @@ main {
   width: 90%;
   margin: auto;
   display: grid;
-  grid-template-rows: auto 47rem 60rem;
+  /* grid-template-rows: repeat(auto-fit, minmax(240px, 1fr)); */
+
+  grid-template-rows: auto 47rem minmax(60rem, auto);
   row-gap: 14px;
   padding: 1.5rem 0rem;
 }
