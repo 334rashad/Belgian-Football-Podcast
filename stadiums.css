@@ -1,4 +1,4 @@
-html * {
+* {
   box-sizing: border-box;
   font-family: "Source Sans Pro", sans-serif;
 }
@@ -138,6 +138,7 @@ main {
   width: 90%;
   margin: auto;
   padding: 1.5rem 1rem;
+  margin-bottom: 3rem;
 }
 .main_container > div {
   width: 90%;
@@ -185,19 +186,15 @@ main {
   width: 120%;
   min-width: 350px;
 }
-#antwerp:hover {
-  fill: red;
-}
 /* main part ends here */
 
 /* footer starts here */
 footer {
-  font-size: 0.75rem;
   height: auto;
   min-height: 6rem;
   width: 100%;
   background-color: #201a05;
-  position: absolute;
+  position: relative;
   bottom: 0;
   border-top: 3px solid yellow;
   display: flex;
