@@ -1,4 +1,4 @@
-* {
+html * {
   box-sizing: border-box;
   font-family: "Source Sans Pro", sans-serif;
 }
@@ -48,10 +48,12 @@ a {
 }
 /* header starts here */
 header {
-  height: 12rem;
+  /* padding: 2rem 6rem; */
+  /* height: 12rem; */
   width: 100%;
   background-color: #060501;
   display: flex;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 10px;
   border-bottom: 3px solid yellow;
@@ -60,7 +62,7 @@ header {
 #logo_div {
   position: relative;
   height: 10rem;
-  width: 10rem;
+  min-width: 10rem;
   margin: 1rem 1rem 1rem 5.7rem;
   border-radius: 20%;
 }
@@ -77,9 +79,17 @@ header {
   width: 100%;
   height: 100%;
 }
+#logo_div + div {
+  margin-left: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 nav {
   /* width: 93%; */
-  align-self: end;
+  margin-left: 1rem;
 }
 nav ul,
 .podcasts,
@@ -90,31 +100,34 @@ nav ul,
   padding: 0px;
 }
 nav li {
-  padding: 0 0.1rem;
+  padding: 0 0.3rem;
 }
 nav li:hover {
   border-bottom: 6px solid #fae043;
-  margin-bottom: -19px;
+  margin-bottom: -22px;
 }
 nav li:nth-child(4) {
   font: normal normal bold 22px/28px "Source Sans Pro";
   border-bottom: 6px solid #fae043;
-  padding-bottom: 19px;
-  margin-bottom: -19px;
+  padding-bottom: 22px;
+  margin-bottom: -22px;
 }
 .podcasts {
-  padding-left: 1rem;
-  margin: 2rem 6rem 2rem 7%;
+  margin-left: 1rem;
+  align-self: end;
+  justify-self: end;
+  /* margin: 2rem 6rem 2rem 7%; */
+  /* width: 25rem; */
 }
 .podcasts div {
-  /* min-width: 8rem; */
+  /* min-width: 11.5rem; */
 }
 .podcasts div img {
   /* display: inline-block; */
   /* width: 95%; */
   /* border-radius: 8px; */
   margin: 5px;
-  height: 2.5rem;
+  /* height: 2.5rem; */
 } /* header ends here */
 
 /* main part starts here */
@@ -131,7 +144,6 @@ main {
   display: flex;
   justify-content: space-between;
   gap: 3rem;
-  margin-bottom: 20rem;
   flex-wrap: wrap;
 }
 #stadium_info {
@@ -192,7 +204,6 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  color: #bcbbb4;
   padding: 0 6rem;
   text-align: center;
   font: normal normal normal 16px/20px "Source Sans Pro";
@@ -226,3 +237,9 @@ footer {
   padding-left: 1rem;
 }
 /* footer ends here */
+
+@media screen and (max-width: 1325px) {
+  .podcasts {
+    flex-direction: column;
+  }
+}
