@@ -141,16 +141,14 @@ nav li:nth-child(4) > a {
   display: flex;
   justify-content: flex-start;
   gap: 3rem;
-  flex-wrap: wrap;
 }
 #stadium_info {
-  max-width: 653px;
   margin: 1rem;
   padding: 2rem 3rem;
   background: #201a05 0% 0% no-repeat padding-box;
   border: 1px solid #fae0433d;
   border-radius: 8px;
-  flex: 10 50%;
+  flex: 5 45%;
 }
 .stadium_text > * {
   display: inline;
@@ -169,6 +167,7 @@ nav li:nth-child(4) > a {
 #stadium_image {
   margin-top: 2.5rem;
   width: 100%;
+  object-fit: cover;
 }
 #stadium_image > img {
   margin-top: 2.5rem;
@@ -176,12 +175,11 @@ nav li:nth-child(4) > a {
 }
 #stadiums_map {
   max-width: 600px;
-  flex: 5 40%;
+  flex: 5 45%;
   align-self: center;
   margin: auto;
 }
 #stadiums_map > object {
-  margin: auto;
   width: 100%;
 }
 /* main part ends here */
@@ -266,6 +264,9 @@ footer {
   .podcasts {
     margin-left: 0;
     justify-content: center;
+  }
+  .main_container > div {
+    flex-direction: column;
   }
   footer,
   .copyright {

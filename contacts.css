@@ -30,7 +30,7 @@ h1 {
   /* display: none; */
   margin: 4rem 0 3rem 0.75rem;
   text-align: left;
-  font: normal normal 600 54px/68px "Source Sans Pro";
+  font: normal normal 600 3.375rem/4.25rem "Source Sans Pro";
   letter-spacing: 0px;
   color: #fae043;
   text-transform: uppercase;
@@ -103,12 +103,12 @@ nav li:hover {
   border-bottom: 6px solid #fae043;
   background-color: #201a05;
 }
-nav li:nth-child(4) {
+nav li:nth-child(3) {
   font: normal normal bold 1.375rem/1.75rem "Source Sans Pro";
   border-bottom: 6px solid #fae043;
   padding-bottom: 2rem;
 }
-nav li:nth-child(4) > a {
+nav li:nth-child(3) > a {
   color: #fae043;
 }
 .podcasts {
@@ -121,18 +121,10 @@ nav li:nth-child(4) > a {
 /* header ends here */
 
 /* main part starts here */
-/* main {
-  width: 100%;
-} */
 .main_container {
   margin: auto;
   padding: 1.5rem 4rem;
   margin-bottom: 3rem;
-}
-.main_container > div {
-  width: 80%;
-  height: auto;
-  margin: 5rem 5rem 30rem 1rem;
 }
 
 #contact_email > p,
@@ -142,36 +134,34 @@ nav li:nth-child(4) > a {
 }
 #contact_email > p a {
   text-decoration: underline;
-  font: normal normal 600 24px/33px "Open Sans";
+  font: normal normal 600 1.55rem/2.1rem "Open Sans";
   letter-spacing: 0px;
   color: #fae043;
 }
 #contact_social {
-  width: auto;
-  max-width: 42rem;
   margin-top: 0rem;
   padding-top: 0%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 2rem;
   flex-wrap: wrap;
 }
 #contact_email > p,
 #contact_social > p {
   margin-right: 2rem;
   margin-bottom: 10px;
-  font: normal normal normal 24px/33px "Open Sans";
+  font: normal normal normal 1.55rem/2.1rem "Open Sans";
   letter-spacing: 0px;
   color: #ffffff;
 }
 #contact_social a {
-  display: inline-block;
-  width: 58px;
-  height: 58px;
+  width: 3.6rem;
+  height: 3.6rem;
 }
 #contact_social > div {
   display: flex;
   justify-content: space-around;
-  margin-right: 2rem;
+  margin-right: 0.2rem;
   position: relative;
   top: -10px;
 }
@@ -215,8 +205,6 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  /* padding-top: 10px; */
 }
 .icon {
   width: 3.3rem;
