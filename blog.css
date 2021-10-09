@@ -27,17 +27,16 @@ body {
   background: #b19d30;
 }
 h1 {
-  /* display: none; */
-  margin: 4rem 0 3rem 0.75rem;
+  margin: 4rem 0;
   text-align: left;
-  font: normal normal 600 54px/68px "Source Sans Pro";
+  font: normal normal 600 3.375rem/4.25rem "Source Sans Pro";
   letter-spacing: 0px;
   color: #fae043;
   text-transform: uppercase;
 }
 h3 {
   text-align: left;
-  font: normal normal bold 28px/36px "Source Sans Pro";
+  font: normal normal bold 1.75rem/2.25rem "Source Sans Pro";
   letter-spacing: 0px;
   color: #060501;
   text-transform: uppercase;
@@ -52,7 +51,6 @@ header {
   background-color: #060501;
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
   flex-wrap: wrap;
   gap: 10px;
   border-bottom: 3px solid yellow;
@@ -128,13 +126,10 @@ nav li:nth-child(2) > a {
 /* header ends here */
 
 /* main part starts here */
-/* main {
-  width: 100%;
-} */
 .main_container {
   margin: auto;
   padding: 1.5rem 4rem;
-  margin-bottom: 3rem;
+  margin-bottom: 10rem;
 }
 .popup_article {
   display: none;
@@ -143,8 +138,8 @@ nav li:nth-child(2) > a {
   cursor: pointer;
   border: none;
   margin: 1.2rem 1.2rem 4rem 1.2rem;
-  width: 243px;
-  height: 52px;
+  width: 15.2rem;
+  height: 3.25rem;
   padding: 10px;
   background: #343330 0% 0% no-repeat padding-box;
   border-radius: 6px;
@@ -152,12 +147,12 @@ nav li:nth-child(2) > a {
 .back_to_articles > p {
   margin-top: -4px;
   text-align: center;
-  font: normal normal normal 20px/27px "Open Sans";
+  font: normal normal normal 1.25rem/1.75rem "Open Sans";
   letter-spacing: 0px;
   color: #ffffff;
 }
 .back_to_articles > p > span {
-  font: normal normal lighter 60px/27px "Open Sans";
+  font: normal normal lighter 3.75rem/1.75rem "Open Sans";
   vertical-align: -37%;
 }
 .popup_article .text_container {
@@ -165,7 +160,7 @@ nav li:nth-child(2) > a {
 }
 .popup_article .text_container > p:nth-child(3) {
   padding-top: 10px;
-  font: normal normal normal 14px/18px "Source Sans Pro";
+  font: normal normal normal 0.875rem/1.125rem "Source Sans Pro";
   letter-spacing: 0px;
   color: #ffffff;
 }
@@ -175,7 +170,7 @@ nav li:nth-child(2) > a {
 }
 .text_container > p:first-child {
   text-align: left;
-  font: normal normal 300 20px/25px "Source Sans Pro";
+  font: normal normal 300 1.25rem/1.56rem "Source Sans Pro";
   letter-spacing: 0px;
   color: #ffffff;
   text-transform: uppercase;
@@ -186,7 +181,7 @@ nav li:nth-child(2) > a {
   padding: 0 5px;
 }
 .text_container > h2 {
-  font: normal normal 600 32px/40px "Source Sans Pro";
+  font: normal normal 600 2rem/2.5rem "Source Sans Pro";
   letter-spacing: 0px;
   color: #fae043;
   text-transform: uppercase;
@@ -197,11 +192,11 @@ nav li:nth-child(2) > a {
   height: 3rem;
   margin: 7px 0px 7px 0px;
   text-align: left;
-  font: normal normal normal 18px/24px "Open Sans";
+  font: normal normal normal 1.125rem/1.5rem "Open Sans";
   letter-spacing: 0px;
   color: #ffffff;
 }
-/* clock icon */
+/* clock icon start */
 span.clock {
   margin-right: 8px;
   background-color: transparent;
@@ -241,16 +236,16 @@ span.clock:before {
 
 #intro_text {
   margin: 1rem;
-  padding: 10px 25px;
+  padding: 0.625rem 1.56rem;
   width: 63%;
-  min-width: 750px;
+  min-width: 46.875rem;
   height: auto;
   background: #201a05 0% 0% no-repeat padding-box;
   border: 1px solid #fae0433d;
   border-radius: 8px;
 }
 #intro_text > p {
-  font: normal normal 600 18px/24px "Open Sans";
+  font: normal normal 600 1.125rem/1.5rem "Open Sans";
   letter-spacing: 0px;
   color: #ffffff;
 }
@@ -308,24 +303,26 @@ figcaption {
 #articles_container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 20rem;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 3rem;
 }
 .article {
   cursor: pointer;
   display: inline-block;
-  height: 32rem;
-  width: 33rem;
-  margin: 1.2rem;
+  min-height: 30rem;
+  min-width: 30rem;
+  max-width: 50rem;
   background: #201a05 0% 0% no-repeat padding-box;
   border: 1px solid #544a14;
   border-radius: 8px;
   overflow: hidden;
+  flex: 1 1 30rem;
 }
 .article > img {
   border-radius: 8px 8px 0 0;
   width: 100%;
-  height: 21rem;
+  height: 60%;
   object-fit: cover;
 }
 /* main part ends here */
@@ -337,7 +334,7 @@ footer {
   width: 100%;
   background-color: #201a05;
   position: relative;
-  bottom: -12rem;
+  bottom: 0rem;
   border-top: 3px solid yellow;
   display: flex;
   flex-wrap: wrap;
@@ -363,8 +360,6 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  /* padding-top: 10px; */
 }
 .icon {
   width: 3.3rem;
@@ -420,10 +415,15 @@ footer {
 @media screen and (max-width: 540px) {
   header {
     flex-direction: column;
-    /* align-items: center; */
   }
   #logo_div + div {
     flex-direction: column-reverse;
     align-self: flex-start;
+  }
+  .main_container {
+    padding: 1rem;
+  }
+  .article {
+    min-width: 10rem;
   }
 }
