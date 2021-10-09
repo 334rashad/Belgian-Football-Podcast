@@ -30,14 +30,14 @@ h1 {
   /* display: none; */
   margin: 4rem 0 3rem 0rem;
   text-align: left;
-  font: normal normal 600 54px/68px "Source Sans Pro";
+  font: normal normal 600 3.375rem/4.25rem "Source Sans Pro";
   letter-spacing: 0px;
   color: #fae043;
   text-transform: uppercase;
 }
 h2,
 h3 {
-  font: normal normal bold 28px/36px Source Sans Pro;
+  font: normal normal bold 1.75rem/2.25rem Source Sans Pro;
   letter-spacing: 0px;
   color: #060501;
   text-transform: uppercase;
@@ -145,12 +145,12 @@ nav li:nth-child(5) > a {
   border-radius: 8px;
 }
 #intro_sub_container > p {
-  font: normal normal 600 34px/52px "Open Sans";
+  font: normal normal 600 2.125rem/3.25rem "Open Sans";
   letter-spacing: 0px;
   color: #ffffff;
 }
 #intro_sub_container > p span {
-  font: normal normal 600 34px/52px "Open Sans";
+  font: normal normal 600 2.125rem/3.25rem "Open Sans";
   letter-spacing: 0px;
   color: #fae043;
 }
@@ -165,7 +165,7 @@ nav li:nth-child(5) > a {
 #about_sub_container > p,
 #about_sub_container > div {
   width: 60%;
-  font: normal normal normal 20px/32px "Open Sans";
+  font: normal normal normal 1.25rem/2rem "Open Sans";
   letter-spacing: 0px;
   color: #060501;
 }
@@ -174,7 +174,7 @@ nav li:nth-child(5) > a {
   right: -20rem;
 }
 .bloggers {
-  max-width: 851px;
+  /* max-width: 53.2rem; */
   box-shadow: 0px 3px 13px #58585829;
   padding: 2rem;
   margin-bottom: 3rem;
@@ -189,7 +189,7 @@ nav li:nth-child(5) > a {
   border: 4px solid #c9cdd3;
 }
 .bloggers > p {
-  font: normal normal normal 20px/32px "Open Sans";
+  font: normal normal normal 1.25rem/2rem "Open Sans";
   letter-spacing: 0px;
   color: #060501;
   padding-top: 3rem;
@@ -200,24 +200,25 @@ nav li:nth-child(5) > a {
   margin: 0px;
 }
 .blogger_name > p {
-  font: normal normal normal 20px/27px "Segoe UI" "Open Sans";
+  font: normal normal normal 1.25rem/1.69rem "Segoe UI", "Open Sans";
   letter-spacing: 0px;
   color: #707070;
+  display: flex;
 }
 .blogger_name span {
   width: 10px;
   position: relative;
   top: 2px;
-  right: -42px;
+  right: -2.62rem;
 }
 .blogger_name span > img {
   width: 21px;
 }
 #scott_twitter {
-  right: -24px;
+  right: -1.31rem;
 }
 #joris_twitter {
-  right: -12px;
+  right: -0.75rem;
 }
 
 #about_sub_container > div:nth-of-type(1) {
@@ -312,6 +313,23 @@ footer {
     margin-left: 0;
     justify-content: center;
   }
+  #about_sub_container {
+    padding: 3rem 2rem;
+  }
+  .bloggers {
+    padding: 1rem;
+    /* max-width: initial; */
+  }
+  #about_sub_container > *,
+  #about_sub_container > p,
+  #about_sub_container > div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+  #about_sub_container > div:nth-of-type(2) {
+    right: 0rem;
+  }
   footer,
   .copyright {
     padding: 1rem;
@@ -326,5 +344,16 @@ footer {
   #logo_div + div {
     flex-direction: column-reverse;
     align-self: flex-start;
+  }
+  .main_container {
+    padding: 1.25rem;
+  }
+  .blogger_name span {
+    right: -1.5rem;
+  }
+  #about_sub_container > *,
+  #about_sub_container > p,
+  #about_sub_container > div {
+    width: 100%;
   }
 }
