@@ -263,6 +263,10 @@ footer {
   nav li:nth-child(4) {
     padding-bottom: 1rem;
   }
+  .podcasts {
+    margin-left: 0;
+    justify-content: center;
+  }
   footer,
   .copyright {
     padding: 1rem;
@@ -277,8 +281,5 @@ footer {
   #logo_div + div {
     flex-direction: column-reverse;
     align-self: flex-start;
-  }
-  .podcasts {
-    margin-left: 0;
   }
 }
