@@ -339,7 +339,6 @@ footer {
 @media screen and (max-width: 540px) {
   header {
     flex-direction: column;
-    /* align-items: center; */
   }
   #logo_div + div {
     flex-direction: column-reverse;

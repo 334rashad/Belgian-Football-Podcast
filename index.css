@@ -294,7 +294,7 @@ nav li:nth-child(1) > a {
   color: rgb(20, 31, 94);
 }
 #league_table a {
-  font: normal normal 600 1.125rem/1.5rem "Open Sans";
+  font: normal normal 600 1.25rem/1.75rem "Open Sans";
   color: rgb(16, 49, 110);
 }
 /* end of sub container elements*/
