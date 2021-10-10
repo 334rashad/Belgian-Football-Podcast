@@ -15,6 +15,7 @@ body {
 ::-webkit-scrollbar {
   /*Safari and Chrome*/
   width: 8px;
+  height: 8px;
 }
 ::-webkit-scrollbar-track {
   background: #161203;
