@@ -1,4 +1,116 @@
 const a = document.getElementById("map_svg");
+const stadiumInfo = document.getElementById("stadium_info");
+const stadiumToShow = {
+  title: stadiumInfo.querySelector("h2"),
+  paragraph: stadiumInfo.querySelector("p"),
+  website: stadiumInfo.querySelector("a"),
+  image: stadiumInfo.querySelector("img"),
+};
+const stadiumsList = [
+  {
+    title: "Jan Breydelstadion",
+    paragraph:
+      "Cercle Brugge & Club Brugge <br> Koning Leopold III-laan 50, 8200 Brugge",
+    website: " ",
+    image: "./img/stadiums/std__0_brugge_Cercle.jpg",
+  },
+  {
+    title: "Guldensporenstadion",
+    paragraph: "Meensesteenweg 84a, 8500 Kortrijk",
+    website: "www.kvk.be",
+    image: "./img/stadiums/std__01_Kortrijk.jpg",
+  },
+  {
+    title: "Elindus Arena",
+    paragraph: "Zuiderlaan 17, 8790 Waregem",
+    website: "www.essevee.be",
+    image: "./img/stadiums/std__02_Regenboogstadion.jpg",
+  },
+  {
+    title: "Ghelamco Arena",
+    paragraph: "Ottergemsesteenweg Zuid 808, 9000 Gent",
+    website: "www.kaagent.be",
+    image: "./img/stadiums/std__03_Gent.jpg",
+  },
+  {
+    title: "Olympisch Stadion",
+    paragraph: "Atletenstraat 80, 2020 Antwerpen",
+    website: "www.beerschot.be",
+    image: "./img/stadiums/std__4_Beerschot.jpg",
+  },
+  {
+    title: "Den Bosuil",
+    paragraph: "Oude Bosuilbaan 56-98, 2100 Antwerpen",
+    website: "royalantwerpfc.be",
+    image: "./img/stadiums/std__05_Antwerp.jpg",
+  },
+  {
+    title: "Cegeka Arena",
+    paragraph: "Stadionplein 4, 3600 Genk",
+    website: "www.krcgenk.be",
+    image: "./img/stadiums/std__06_Genk.jpg",
+  },
+  {
+    title: "King Power At Den Dreef Stadion",
+    paragraph: "Kardinaal Mercierlaan 46, 3001 Leuven",
+    website: "www.ohl.be",
+    image: "./img/stadiums/std__07_OHL Leuven.jpg",
+  },
+  {
+    title: "Lotto Park",
+    paragraph: "Théo Verbeecklaan 18, 1070 Anderlecht",
+    website: "www.rsca.be",
+    image: "./img/stadiums/std__08_Anderlecht.jpg",
+  },
+  {
+    title: "Kehrweg-Stadion",
+    paragraph: "Kehrweg 14, 4700 Eupen",
+    website: "as-eupen.be",
+    image: "./img/stadiums/std__09_Eupen.jpg",
+  },
+  {
+    title: "AFAS Stadion",
+    paragraph: "Kleine Nieuwedijkstraat 53, 2800 Mechelen",
+    website: "www.kvmechelen.be",
+    image: "./img/stadiums/std__0010_Mechelen.jpg",
+  },
+  {
+    title: "Stade du Pays de Charleroi",
+    paragraph: "Bd Zoé Drion 19, 6000 Charleroi",
+    website: "www.sporting-charleroi.be",
+    image: "./img/stadiums/std__0011_Charleroi.jpg",
+  },
+  {
+    title: "Diaz Arena",
+    paragraph: "Leopold van Tyghemlaan 62, 8400 Oostende",
+    website: "www.kvo.be",
+    image: "./img/stadiums/std__012.jpg",
+  },
+  {
+    title: "Stade Joseph Marien",
+    paragraph: "Brusselsesteenweg 223, 1190 Vorst",
+    website: "rusg.brussels",
+    image: "./img/stadiums/std__013.jpg",
+  },
+  {
+    title: "Stade Maurice Dufrasne",
+    paragraph: "Rue de la Centrale 2, 4000 Liège",
+    website: "standard.be",
+    image: "./img/stadiums/std__014.jpg",
+  },
+  {
+    title: "Stade du Pairay",
+    paragraph: "Rue de la Boverie 253, 4100 Seraing",
+    website: "www.rfc-seraing.be",
+    image: "./img/stadiums/std__015.jpg",
+  },
+  {
+    title: "Stayen",
+    paragraph: "Tiensesteenweg 168, 3800 Sint-Truiden",
+    website: "www.stvv.com",
+    image: "./img/stadiums/std__016.jpg",
+  },
+];
 
 // It's important to add an load event listener to the object,
 // as it will load the svg doc asynchronously

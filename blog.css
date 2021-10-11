@@ -422,9 +422,6 @@ footer {
   #article_text {
     width: 95%;
   }
-  #articles_container {
-    padding: 1rem;
-  }
   .article {
     max-width: initial;
   }
@@ -443,6 +440,9 @@ footer {
     align-self: flex-start;
   }
   .main_container {
+    padding: 0rem;
+  }
+  #articles_container {
     padding: 1rem;
   }
   #intro_text {

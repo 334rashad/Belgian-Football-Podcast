@@ -130,9 +130,6 @@ nav li:nth-child(4) > a {
 /* header ends here */
 
 /* main part starts here */
-/* main {
-  width: 100%;
-} */
 .main_container {
   margin: auto;
   padding: 1.5rem 4rem;
@@ -150,6 +147,7 @@ nav li:nth-child(4) > a {
   border: 1px solid #fae0433d;
   border-radius: 8px;
   flex: 5 45%;
+  max-width: 50rem;
 }
 .stadium_text > * {
   display: inline;
@@ -239,6 +237,9 @@ footer {
   .podcasts {
     flex-direction: column;
   }
+  #stadium_info {
+    max-width: none;
+  }
 }
 @media screen and (max-width: 1090px) {
   html {
@@ -282,5 +283,8 @@ footer {
   #logo_div + div {
     flex-direction: column-reverse;
     align-self: flex-start;
+  }
+  .main_container {
+    padding: 1.5rem 1rem;
   }
 }
