@@ -260,7 +260,14 @@ mapSVG.addEventListener(
           console.log(evt.target.parentElement.parentElement.id);
           switch (evt.target.parentElement.parentElement.id) {
             case "Component_5_15":
-              svgDoc.getElementById("BE-VBR").style.fill = "#FAD443";
+              stadiumToShow.title.innerHTML = stadiumsList[7].title;
+              stadiumToShow.address.innerHTML = stadiumsList[7].address;
+              stadiumToShow.website.innerHTML = stadiumsList[7].website;
+              stadiumToShow.website.setAttribute(
+                "href",
+                "https://" + stadiumsList[7].website
+              );
+              stadiumToShow.image.src = stadiumsList[7].image;
               break;
             case "Component_5_16":
               svgDoc.getElementById("BE-WBR").style.fill = "#FAD443";
